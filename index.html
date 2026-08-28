@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#111111">
+  <title>ITZZY TOPUP STORE 🎮⚡</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="header">
+    <a class="brand" href="#">
+      <span class="brand-icon">⚡</span>
+      <span>ITZZY <b>TOPUP</b></span>
+    </a>
+    <button class="menu-btn" id="menuBtn" aria-label="Menu">☰</button>
+    <nav id="nav">
+      <a href="#home">Home</a>
+      <a href="#games">Games</a>
+      <a href="#how">How It Works</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="hero-copy">
+        <span class="badge">⚡ FAST • SAFE • EASY</span>
+        <h1>Game Topups<br><span>Made Simple.</span></h1>
+        <p>Choose your game, select a package and place your order in seconds.</p>
+        <a class="primary-btn" href="#games">Top Up Now →</a>
+      </div>
+      <div class="hero-card">
+        <div class="glow"></div>
+        <div class="controller">🎮</div>
+        <strong>ITZZY</strong>
+        <small>TOPUP STORE</small>
+      </div>
+    </section>
+
+    <section class="section" id="games">
+      <div class="section-title">
+        <div>
+          <span class="eyebrow">SELECT A GAME</span>
+          <h2>Popular Games</h2>
+        </div>
+        <span class="live">● ONLINE</span>
+      </div>
+
+      <div class="games-grid">
+        <article class="game-card featured">
+          <div class="game-art freefire">🔥</div>
+          <div class="game-info">
+            <span class="tag">POPULAR</span>
+            <h3>Free Fire</h3>
+            <p>Diamonds & memberships</p>
+            <button class="topup-btn" data-game="Free Fire">Top Up →</button>
+          </div>
+        </article>
+
+        <article class="game-card">
+          <div class="game-art bloodstrike">🔫</div>
+          <div class="game-info">
+            <h3>Blood Strike</h3>
+            <p>Gold & game items</p>
+            <button class="topup-btn" data-game="Blood Strike">Top Up →</button>
+          </div>
+        </article>
+
+        <article class="game-card">
+          <div class="game-art cpm">🏎️</div>
+          <div class="game-info">
+            <h3>Car Parking Multiplayer</h3>
+            <p>Coins & game items</p>
+            <button class="topup-btn" data-game="Car Parking Multiplayer">Top Up →</button>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="section how" id="how">
+      <span class="eyebrow">HOW IT WORKS</span>
+      <h2>Top up in 3 easy steps</h2>
+      <div class="steps">
+        <div class="step"><b>01</b><h3>Choose</h3><p>Select your game and package.</p></div>
+        <div class="step"><b>02</b><h3>Enter ID</h3><p>Enter your in-game Player ID.</p></div>
+        <div class="step"><b>03</b><h3>Receive</h3><p>We process your order quickly.</p></div>
+      </div>
+    </section>
+
+    <section class="cta" id="contact">
+      <div>
+        <span class="eyebrow">NEED HELP?</span>
+        <h2>Ready to top up?</h2>
+        <p>Contact ITZZY TOPUP STORE for support and orders.</p>
+      </div>
+      <a class="primary-btn" href="https://wa.me/" target="_blank" rel="noopener">WhatsApp →</a>
+    </section>
+  </main>
+
+  <footer>
+    <span>© 2026 ITZZY TOPUP STORE</span>
+    <span>Game topups made easy ⚡</span>
+  </footer>
+
+  <div class="modal" id="orderModal" aria-hidden="true">
+    <div class="modal-box">
+      <button class="close" id="closeModal">×</button>
+      <span class="eyebrow">ORDER</span>
+      <h2 id="modalGame">Free Fire</h2>
+      <form id="orderForm">
+        <label>Player ID
+          <input id="playerId" required inputmode="numeric" placeholder="Enter Player ID">
+        </label>
+        <label>Package
+          <select id="package">
+            <option>100 Diamonds — Rs. 350</option>
+            <option>310 Diamonds — Rs. 1,040</option>
+            <option>520 Diamonds — Rs. 1,720</option>
+            <option>1060 Diamonds — Rs. 3,380</option>
+            <option>5600 Diamonds — Rs. 16,850</option>
+          </select>
+        </label>
+        <button class="primary-btn full" type="submit">Continue Order →</button>
+      </form>
+      <p class="note">API ordering will be connected through a secure server endpoint. Never place your FlashTopup API key in this HTML/JavaScript.</p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
