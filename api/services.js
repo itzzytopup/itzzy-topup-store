@@ -5,9 +5,10 @@ export default async function handler(req, res) {
     const apiId = process.env.FT_API_ID;
     const apiKey = process.env.FT_API_KEY;
 
-    const body = JSON.stringify({
-      product_id: 11
-    });
+    cconst body = JSON.stringify({
+  product_id: 11,
+  product_type: "topup"
+});
 
     const timestamp = Math.floor(Date.now() / 1000).toString();
     const nonce = crypto.randomUUID();
